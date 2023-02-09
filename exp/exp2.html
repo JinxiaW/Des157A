@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <h2 id="color"> Have a great gaming experience!</h2>
+
+    <script>
+   
+        var Colors =["red", "purple", "green", "blue"];
+       var randomChosenColour = Colors[randomInt()];
+
+            function randomInt() {
+                var randomColors = Math.floor(Math.random() * 4);
+               return randomColors;
+            }
+
+            console.log(randomChosenColour);     
+    
+            var select =false;
+
+                while (!false) {           
+                var randomColors = prompt(`Please choose a color you like from "red", "purple", "green" or "blue". The color you enter will be matched with a random color from the program.`, "")
+        
+                    if (randomColors != randomChosenColour) {
+                        alert('Please Try again!');
+                        select = false;
+
+                    } else if (randomColors = randomChosenColour){
+                       alert('You are Correct!');
+                      document.getElementById("color").style.color = randomChosenColour;
+                        select = true;   
+                        break;
+                    }
+                }
+
+    </script>
+</body>
+</html>
