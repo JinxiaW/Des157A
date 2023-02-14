@@ -191,35 +191,35 @@ footer a:hover {
     display: block;
     border:solid 0px white;
     border-width: 2px 100px 2px 100px;
-    border-color:rgba(255, 255, 255, 0.3);
+    border-color:transparent transparent transparent rgba(255, 255, 255, 0.3);
     transform: rotate(-45deg) translate3d(1px, 1px, 0);
     transform-origin: 0%;
 }
 
 .meteor1 {
-    top: 22px;
-    left: 70%;
+    top: 2vh;
+    left: 30vw;
     animation: meteorflashing 2s infinite linear 1s;
 }
 .meteor2 {
-    top: 42px;
-    left: 120px;
+    top: 22vh;
+    left: 80vw;
     background: rgb(234, 0, 255);
     animation: meteorflashing 2s infinite linear 1s;
   }
   .meteor3 {
-    top: 50px;
-    left: 80px;
+    top: 30vh;
+    left: 40vw;
     animation: meteorflashing 3s infinite linear 2s;
   }
   .meteor4 {
-    top: 30px;
-    left: 90px;
+    top: 10vh;
+    left: 50vw;
     animation: meteorflashing 3s infinite linear 1s;
   }
   .meteor5 {
-    top: 70px;
-    right: 22px;
+    top: 50vh;
+    right: 2vw;
     animation: meteorflashing 3s infinite linear 3s;
   }
 @keyframes meteorflashing {
