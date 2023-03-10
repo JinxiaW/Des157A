@@ -73,7 +73,7 @@
 		} else {
 			diceData.index = 1;
 		}
-		document.getElementById("Player").innerHTML = `Current Player:player${diceData.index+1}`
+		
 	}
 
 	//player
