@@ -79,7 +79,7 @@
 	//player
 	holdButton.addEventListener(`click`, function() {
 		player();
-
+		document.getElementById("Player").innerHTML = `Current Player:palyer${diceData.index+1}`
 		console.log("diceData.index", diceData.index);
 	})
 
