@@ -135,7 +135,8 @@ overflow: hidden;
 	height: 220px;
 }
 .setButton{
-	position: absolute; top: 5px;
+	position: absolute; 
+	top: 5px;
 	right: 20px;
 }
 #Player{
@@ -159,4 +160,5 @@ footer a{
 	padding: 20px 0;
 	color:#984e37;
 	font-family: 'Arial Black';
+
 }

@@ -61,7 +61,7 @@
 
 
 	//show current players
-	document.getElementById("Player").innerHTML = `Current Player:palyer${diceData.index+1}`
+	document.getElementById("Player").innerHTML = `Current Player:player${diceData.index+1}`
 
 
 
@@ -79,7 +79,7 @@
 	//player
 	holdButton.addEventListener(`click`, function() {
 		player();
-		document.getElementById("Player").innerHTML = `Current Player:palyer${diceData.index+1}`
+		document.getElementById("Player").innerHTML = `Current Player:player${diceData.index+1}`
 		console.log("diceData.index", diceData.index);
 	})
 
@@ -103,6 +103,7 @@
 			player();
 		}
 		else if (diceData.diceImg01 === 1 || diceData.diceImg02 === 1) {
+			document.getElementById("Player").innerHTML = `Current Player:player${diceData.index+1}`;
 			player();
 		} 
 		else {
