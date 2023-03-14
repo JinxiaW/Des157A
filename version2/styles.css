@@ -1,0 +1,425 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.w100 {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.layer {
+	width: 1200px;
+	height: 750px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#layer1,
+#layer2,
+#layer3,
+#layer4,
+#layer5 {
+	position: absolute;
+	width: 100%;
+	width: 1200px;
+	height: 750px;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+
+#layer2,
+#layer3,
+#layer4,
+#layer5 {
+	display: none;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+/* layer 1 */
+#startButton:hover {
+	animation: startButton 0.5s;
+}
+
+.startButton,
+.startbg {
+	position: absolute;
+	top: 340px;
+	left: 40%;
+	width: 23%;
+	height: 22%;
+}
+
+.startbg img {
+	transform: scale(3.5);
+}
+
+@keyframes startButton {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+/* layer2 */
+.back_button,
+.continue_button {
+	position: absolute;
+	height: 50px;
+	bottom: 200px;
+	border: none;
+}
+
+.back_button {
+	left: 400px;
+}
+
+.continue_button {
+	right: 380px;
+}
+
+/* layer 3 */
+.backArrow {
+	position: absolute;
+	bottom: 343px;
+	left: 30px;
+}
+
+.playerNameBox01 {
+	position: absolute;
+	bottom: 350px;
+	left: 170px;
+	width: 260px;
+	height: 60px;
+	background-image: url("images/enterPlayerN.png");
+	background-size: 100% 100%;
+	padding: 10px 15px 10px 10px;
+}
+
+.playerNameBox02 {
+	position: absolute;
+	bottom: 350px;
+	right: 170px;
+	width: 260px;
+	height: 60px;
+	background-image: url("images/enterPlayerN.png");
+	background-size: 100% 100%;
+	padding: 10px 15px 10px 10px;
+}
+
+#playerName01,
+#playerName02 {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	color: #984e37;
+	font-weight: bold;
+	text-align: center;
+}
+
+#playerName01::value {
+	font-size: 20px;
+}
+
+#playButton {
+	width: 170px;
+	height: 50px;
+	position: absolute;
+	bottom: 250px;
+	left: 510px;
+	background: none;
+	background-image: url("images/enterPlayerN.png");
+	background-size: 100% 100%;
+	padding: 10px;
+	border: none;
+	color: #984e37;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+#playButton:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backArrowButton {
+	position: absolute;
+	top: 330px;
+	left: 20px;
+}
+
+/* layer 4 */
+.third_img {
+	width: 30%;
+	position: absolute;
+	top: 130px;
+	left: 36%;
+}
+
+@keyframes playerEffect {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.12);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.playerEffects {
+	animation: playerEffect 1s infinite;
+	box-shadow: 0 0 10px 1px #fff;
+}
+
+.player01Img,
+.player02Img {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.player01Img {
+	left: 130px;
+}
+
+.player02Img {
+	right: 170px;
+}
+
+.player01,
+.player02 {
+	position: absolute;
+	bottom: 300px;
+	width: 260px;
+	height: 60px;
+	background-image: url("images/playerbk.png");
+	background-size: 100% 100%;
+	padding: 10px 15px 10px 10px;
+}
+
+.player01 {
+	left: 85px;
+}
+
+.player02 {
+	right: 100px;
+}
+
+#player01,
+#player02 {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 25px;
+	line-height: 40px;
+	color: #fff;
+}
+
+@keyframes text02 {
+	0% {
+		transform: scale(0);
+	}
+
+	50% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+}
+
+.player01Sum,
+.player02Sum {
+	position: absolute;
+	top: 300px;
+	font-size: 40px;
+	color: lightgoldenrodyellow;
+}
+
+.text02 {
+	animation: text02 1.2s;
+	opacity: 0;
+}
+
+.player01Sum {
+	left: 320px;
+}
+
+.player02Sum {
+	right: 335px;
+}
+
+.second_img {
+	position: absolute;
+	width: 330px;
+	top: 135px;
+	left: 450px;
+}
+
+.imgBox {
+	width: 100%;
+	display: flex;
+	margin: 50px 0;
+	height: 160px;
+}
+
+.dice {
+	width: 100%;
+}
+
+@keyframes img01 {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.dice img {
+	display: block;
+	width: 140px;
+	margin: 0 auto;
+	animation: img01 1s;
+}
+
+.diceButton button {
+	display: block;
+	width: 65%;
+	height: 60px;
+	margin: 0 auto;
+	background-size: 100% 100%;
+	border: none;
+	box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+#Player {
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+	font-family: 'Arial Black';
+}
+
+#rollButton {
+	background-image: url("images/button_roll.png");
+}
+
+#holdButton {
+	margin-top: 30px;
+	background-image: url("images/button_hold.png");
+}
+
+
+#scoreBox01,
+#scoreBox02{
+	line-height: 85px;
+}
+.scoreBox01,.scoreBox02 {
+	width: 22%;
+	height: 80px;
+	position: absolute;
+	bottom: 200px;
+	background-image: url("images/socre.png");
+	background-size: 100% 100%;
+}
+
+.scoreBox01{
+	left: 7%;
+}
+.scoreBox02 {
+	right: 8%;
+}
+
+@keyframes text01 {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.scoreBox01 p,
+.scoreBox02 p {
+	line-height: 100px;
+	font-size: 25px;
+	color: red;
+	text-align: right;
+	padding-right: 15px;
+	animation: text01 1s;
+	font-family: font01;
+	font-weight: bold;
+	color: #984e37;
+}
+
+.homeButton {
+	position: absolute;
+	top: 3px;
+	right: 20px;
+}
+
+.homeButton img {
+	width: 70px;
+}
+
+
+/* layer 5 */
+.replay_button {
+	position: absolute;
+	bottom: 140px;
+	right: 10px;
+	width: 200px;
+	height: 220px;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	padding: 0 400px;
+}
+
+footer a {
+	display: block;
+	width: 50%;
+	text-decoration: none;
+	text-align: center;
+	padding: 20px 0;
+	color: #984e37;
+	font-family: 'Arial Black';
+}
