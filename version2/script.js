@@ -1,6 +1,12 @@
 (function() {
 	`use strict`;
 	console.log(`reading js`);
+	 window.alert(`
+	 Hello and welcome to the testing session!
+	Here are the tasks and goals 
+	 Test that the start button is working.
+	 Test that the Back and Continue buttons are functioning properly. 
+	 Verify that the game can be reset and started again, and the scores are reset to 0.`)
 
 	const startButton = document.getElementById("startButton")
 	const rollButton = document.getElementById("rollButton")
