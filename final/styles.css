@@ -17,7 +17,7 @@ body{
     color: rgb(255, 255, 255);
 }
 
-header {
+#container header {
     border: solid 3px rgb(240, 236, 236);
     width: 1200px;
     height: 150px;
@@ -25,28 +25,28 @@ header {
     margin: 20px auto;
 }
 
-h1{
+#container h1{
     text-align: center;
     margin-top: 50px;
 }
 
-h2{
+#container h2{
     margin-top: 7%;
 }
 
-main{
+#container main{
     width: 100%;
     padding: 20px 0; 
     margin-right:auto;
 	display: flex;
 	flex-wrap: wrap;
 }
-main .content{
+#container main .content{
 	width: 50%;
 	padding: 0 10px;
 }
 
-section h2{
+#container section h2{
 	color: #a6c4d4;
 	background-color: aliceblue;
 	padding: 10px;
@@ -54,13 +54,13 @@ section h2{
 	margin-bottom: 30px;
 }
 
-section {
+#container section {
     font-size: 18px;
     color: rgb(250, 246, 246);
 	line-height: 40px;
 	padding-bottom: 20px;
 }
-section p{
+#container section p{
 	padding: 0 10px;
 }
 
@@ -68,7 +68,7 @@ section p{
 	width: 100%;
 }
 
-footer {
+#container footer {
     width: 100%;
     height: 100px;
     margin-top: 30px;
@@ -76,11 +76,72 @@ footer {
 	display: flex;
 }
 
-footer a {
+#container footer a {
 	display: block;
 	width: 50%;
     color: rgb(255, 255, 255);
     font-size: 17px;
     text-decoration: none;
     padding: 10px 20px 12px 20px;
+}
+
+body {
+	font-family:'Lucida Sans';
+	box-sizing: border-box;
+	background-color: #9ba0bd;
+}
+
+#user {
+	width: 1250px;
+	margin: 0 auto;
+	border: 5px solid #fff;
+	padding: 20px 50PX;
+	background-color: #fff;
+	padding: 40PX;
+}
+
+#userbody h1 {
+	font-family: Georgia;
+	color: #000;
+	text-align: center;
+	padding: 40PX;
+
+}
+#userbody h2{
+	font-family: 'Georgia';
+	margin-bottom: 20px;
+}
+#user section {
+	display: flex;
+	margin: 50px 0;
+	overflow: hidden;
+	color: #000;
+	background-color: #fff;
+	background-color: #dbd2e3;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	position: relative;
+}
+
+.left {
+	width: 50%;
+	padding: 40px 40PX;
+}
+
+.right {
+	width: 25%;
+	height: 350px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+}
+.right img{
+	width: 100%;
+}
+#ref{
+	display: block;
+	width: 100%;
+	padding: 40px;
+	flex-wrap: wrap;
 }
